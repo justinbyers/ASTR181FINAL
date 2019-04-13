@@ -6,56 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ASTR181 Final</title>
-    <link rel="stylesheet" href="css.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css.css" type="text/css"> -->
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        #wrapper {
+            position: fixed;
+            background: #111111;
+            border: 3px solid black;
+            width: 1000px;
+            height: 605px;
+            left: 50%;
+            top: 50%;
+            margin-left: -500px;
+            margin-top: -320px;
+
+
+        }
+
+        #leftCol {
+            float: left;
+            background: grey;
+            width: 297px;
+            height: 100%;
+            border-right: 3px solid black;
+        }
+
+        #rightCol {
+            float: left;
+            background: grey;
+            width: 700px;
+            height: 100%;
+
+        }
+
+        #eventBox {
+            display: inline-block;
+            background: grey;
+            width: 277px;
+            height: auto;
+            margin: 5px 5px 0px 5px;
+            padding: 5px 5px 0px 5px;
+        }
+
+        #descBox {
+            display: inline-block;
+            position: relative;
+            background: grey;
+            width: 690px;
+            height: 595px;
+            margin: 5px;
+
+            font-size: 18px;
+        }
+
+        #event {
+            display: inline-block;
+            background: #000000;
+            width: 273px;
+            height: 50px;
+            margin: 0px 0px 5px 0px;
+
+            border: 2px solid white;
+            text-shadow: 1px 1px grey;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            vertical-align: middle;
+
+        }
+
+        .inner {
+            position: absolute;
+            text-align: left;
+        }
+
+        .title {
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
 
     <div id="wrapper">
-        <!-- <div id="innerWrapper"> -->
+
         <!-- Event List -->
         <div id="leftCol">
             <div id="eventBox">
-
-                <div id="event">
+                <div id="event" onclick="showHome()">
+                    <p>Home</p>
+                </div>
+                <div id="event" onclick="console.log('a');" style="visibility: hidden">
                     <p>Event 1</p>
                 </div>
-                <div id="event">
-                    <p>Event 2</p>
+                <div id="event" onclick="showEvent1()">
+                    <p>Sombrero Galaxy</p>
                 </div>
-                <div id="event">
+                <div id="event" style="visibility: hidden">
+                    <p></p>
+                </div>
+                <div id="event" onclick="showEvent2()">
+                    <p>Crab Nebula</p>
+                </div>
+                <div id="event" onclick="alert('Not yet implemented');">
                     <p>Event 3</p>
                 </div>
-                <div id="event">
+                <div id="event" onclick="alert('Not yet implemented');">
                     <p>Event 4</p>
                 </div>
-                <div id="event">
+                <div id="event" onclick="alert('Not yet implemented');">
                     <p>Event 5</p>
                 </div>
-                <div id="event">
+                <div id="event" onclick="alert('Not yet implemented');">
                     <p>Event 6</p>
                 </div>
-                <div id="event">
+                <div id="event" onclick="alert('Not yet implemented');">
                     <p>Event 7</p>
                 </div>
-                <div id="event">
-                    <p>Event 8</p>
-                </div>
-                <div id="event">
-                    <p>Event 9</p>
-                </div>
-                <div id="event">
-                    <p>Event 10</p>
-                </div>
-
-
-
 
             </div>
-        </div>
+        </div> <!-- End of leftCol-->
 
-        <!-- <div id="middleCol"> </div> -->
 
         <!-- Descriptions -->
         <div id="rightCol">
@@ -63,44 +140,69 @@
             <!-- Descriptions box -->
             <div id="descBox">
 
+                <div class="inner" id="home_Info" style="visibility: visible;">
+                    <p class="title">Welcome to a small directory of space objects</p>
+                    <p>Click on the named buttons of the left hand side to open a new object.</p>
+                    <br> <br> <br>
+                    <p>Please note that this is a very rough draft to showcase our idea we (Justin Byers & Quinn
+                        Iadicola) intend to provide</p><br><br><br>
+                    <p>Some things we intend to implement: </p>
+                    <ul>- More objects on the left hand side column (grouped by type, eg: 2-3 galaxies, 2-3 nebula, etc)
+                    </ul>
+                    <ul>- Attach SkyNet observation images to each object</ul>
+                    <ul>- More defined information: names, descriptions, age, distance from Earth</ul>
+                    <ul>- Better refined graphical user interface (clean up color scheme, attach space themed background
+                        picture, etc) </ul>
+                </div>
+
+                <div class="inner" id="event1_Info" style="visibility: hidden">
+                    <p class="title">The Sombrero Galaxy</p>
+                    <p>Description: </p>
+                    <ul>- Age:</ul>
+                    <ul>- Distance:</ul>
+                    <ul>- Notable features:</ul>
+                    <br> <br> <br>
+                    <p>*Picture here*</p>
+
+                </div>
+
+                <div class="inner" id="event2_Info" style="visibility: hidden">
+                    <p class="title">The Crab Nebula</p>
+                    <p>Description: </p>
+                    <ul>- Age:</ul>
+                    <ul>- Distance:</ul>
+                    <ul>- Notable features:</ul>
+                    <br> <br> <br>
+                    <p>*Picture here*</p>
+                </div>
+
             </div>
 
         </div>
-        <!-- </div> -->
+
     </div>
 
-    <!-- 
-    <div id="wrapper">
 
-        <div id="innerWrapper">
-
-            <div id="topRow">
-
-                <div id="titleBox">
-                    <span class="title">A Timeline of Space Events</span>
-                </div>
-
-            </div>
-
-            <div id="middleRow">
-
-                <div id="timeLine">
-                    asdf
-                </div>
-
-            </div>
-
-            <div id="bottomRow">
-
-                
-
-            </div>
-
-
-        </div>
-
-
-    </div> -->
+    <script> //-- move this to header lol -->
+        function hideCurrentInfo() {
+            // document.getElementById("descBox").innerText = "";
+            document.getElementById("home_Info").setAttribute("style", "visibility:hidden;");
+            document.getElementById("event1_Info").setAttribute("style", "visibility:hidden;");
+            document.getElementById("event2_Info").setAttribute("style", "visibility:hidden;");
+        }
+        function showHome() {
+            hideCurrentInfo();
+            document.getElementById("home_Info").setAttribute("style", "visibility:visible;");
+        }
+        function showEvent1() {
+            hideCurrentInfo();
+            document.getElementById("event1_Info").setAttribute("style", "visibility:visible;");
+        }
+        function showEvent2() {
+            hideCurrentInfo();
+            document.getElementById("event2_Info").setAttribute("style", "visibility:visible;");
+        }
+    </script>
 
 </body>
 

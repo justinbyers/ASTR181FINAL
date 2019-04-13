@@ -43,10 +43,13 @@ html, body{
 }
 #descBox{
     display: inline-block;
+    position: relative;
     background: grey;
     width: 690px;
     height: 595px;
     margin: 5px;
+
+    font-size: 18px;
 }
 
 #event{
@@ -60,9 +63,18 @@ html, body{
     text-shadow: 1px 1px grey;
     text-align: center;
     color: white;
+    font-size: 16px;
     vertical-align: middle;
-}
 
+}
+.inner{
+    position: absolute;
+    text-align: left;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+}
 /*
 /* html, body{
     margin: 0;
