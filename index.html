@@ -6,89 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ASTR181 Final</title>
-    <!-- <link rel="stylesheet" href="css.css" type="text/css"> -->
-    <style>
-        html,
-        body {
-            margin: 0;
-        }
-
-        #wrapper {
-            position: fixed;
-            background: #111111;
-            border: 3px solid black;
-            width: 1000px;
-            height: 605px;
-            left: 50%;
-            top: 50%;
-            margin-left: -500px;
-            margin-top: -320px;
+     <link rel="stylesheet" href="css.css" type="text/css"> 
+    <script src="script.js" charset="utf-8" type="text/javascript"></script>
 
 
-        }
-
-        #leftCol {
-            float: left;
-            background: grey;
-            width: 297px;
-            height: 100%;
-            border-right: 3px solid black;
-        }
-
-        #rightCol {
-            float: left;
-            background: grey;
-            width: 700px;
-            height: 100%;
-
-        }
-
-        #eventBox {
-            display: inline-block;
-            background: grey;
-            width: 277px;
-            height: auto;
-            margin: 5px 5px 0px 5px;
-            padding: 5px 5px 0px 5px;
-        }
-
-        #descBox {
-            display: inline-block;
-            position: relative;
-            background: grey;
-            width: 690px;
-            height: 595px;
-            margin: 5px;
-
-            font-size: 18px;
-        }
-
-        #event {
-            display: inline-block;
-            background: #000000;
-            width: 273px;
-            height: 50px;
-            margin: 0px 0px 5px 0px;
-
-            border: 2px solid white;
-            text-shadow: 1px 1px grey;
-            text-align: center;
-            color: white;
-            font-size: 16px;
-            vertical-align: middle;
-
-        }
-
-        .inner {
-            position: absolute;
-            text-align: left;
-        }
-
-        .title {
-            font-size: 30px;
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
@@ -183,26 +104,7 @@
     </div>
 
 
-    <script> //-- move this to header lol -->
-        function hideCurrentInfo() {
-            // document.getElementById("descBox").innerText = "";
-            document.getElementById("home_Info").setAttribute("style", "visibility:hidden;");
-            document.getElementById("event1_Info").setAttribute("style", "visibility:hidden;");
-            document.getElementById("event2_Info").setAttribute("style", "visibility:hidden;");
-        }
-        function showHome() {
-            hideCurrentInfo();
-            document.getElementById("home_Info").setAttribute("style", "visibility:visible;");
-        }
-        function showEvent1() {
-            hideCurrentInfo();
-            document.getElementById("event1_Info").setAttribute("style", "visibility:visible;");
-        }
-        function showEvent2() {
-            hideCurrentInfo();
-            document.getElementById("event2_Info").setAttribute("style", "visibility:visible;");
-        }
-    </script>
+
 
 </body>
 
