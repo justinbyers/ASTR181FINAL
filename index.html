@@ -20,14 +20,14 @@
         <!-- Event List -->
         <div id="leftCol">
             <div id="eventBox">
-                <div id="event" style="margin: 0px 0px 10px 0px;" onclick="showHome()">
-                    <p class=text>Home</p>
+                <div id="event" style="margin: 0px 0px 0px 0px;" onclick="showHome()">
+                    <p class=text style="margin: 15px 0px 0px 0px;">Home</p>
                 </div>
                 <!-- <div id="event" onclick="console.log('a');" style="visibility: hidden">
                     <p>Event 1</p>
                 </div> -->
                 <div
-                    style="width: 207px; height: 2px; margin: 20px 0px 20px 0px; background-color: rgba(99, 99, 99, 0.753);">
+                    style="width: 207px; height: 2px; margin: 15px 0px 18px 0px; background-color: rgba(99, 99, 99, 0.753);">
                 </div>
 
                 <div id="event" onclick="showEvent1()">
@@ -37,20 +37,26 @@
                 <div id="event" onclick="showEvent2()">
                     <p class=text>Crab Nebula</p>
                 </div>
-                <div id="event" onclick="alert('Not yet implemented');">
-                    <p class=text>Event 3</p>
+
+                <div id="event" onclick="showEvent3()">
+                    <p class=text>NGC 1365</p>
                 </div>
-                <div id="event" onclick="alert('Not yet implemented');">
-                    <p class=text>Event 4</p>
+                <div id="event" onclick="showEvent4()">
+                    <p class=text>NGC 2997</p>
                 </div>
-                <div id="event" onclick="alert('Not yet implemented');">
-                    <p class=text>Event 5</p>
+                <div id="event" onclick="showEvent5()">
+                    <p class=text>M66</p>
                 </div>
-                <div id="event" onclick="alert('Not yet implemented');">
-                    <p class=text>Event 6</p>
+                <div id="event" onclick="showEvent6()">
+                    <p class=text>M96</p>
                 </div>
-                <div id="event" onclick="alert('Not yet implemented');">
-                    <p class=text>Event 7</p>
+
+                <div
+                    style="width: 207px; height: 2px; margin: 20px 0px 15px 0px; background-color: rgba(99, 99, 99, 0.753);">
+                </div>
+
+                <div id="event" onclick="showCredits()">
+                    <p class=text>Credits</p>
                 </div>
 
             </div>
@@ -93,13 +99,80 @@
                 </div>
 
                 <div class="inner" id="event2_Info" style="visibility: hidden">
-                    <p class="title">The Crab Nebula</p>
+                    <p class="title2">The Crab Nebula</p>
+                    <hr>
+
                     <p>Description: </p>
                     <ul>- Age:</ul>
                     <ul>- Distance:</ul>
                     <ul>- Notable features:</ul>
                     <br> <br> <br>
-                    <p>*Picture here*</p>
+                    <div id=pic_crabnebula>asd</div>
+
+                </div>
+
+                <div class="inner" id="event3_Info" style="visibility: hidden">
+                    <p class="title2">NGC 1365</p>
+                    <hr>
+
+                    <p>Description: </p>
+                    <ul>- Age:</ul>
+                    <ul>- Distance:</ul>
+                    <ul>- Notable features:</ul>
+                    <br> <br> <br>
+                    <div id=pic_ngc1365>asd</div>
+
+                </div>
+
+                <div class="inner" id="event4_Info" style="visibility: hidden">
+                    <p class="title2">NGC 2997</p>
+                    <hr>
+
+                    <p>Description: </p>
+                    <ul>- Age:</ul>
+                    <ul>- Distance:</ul>
+                    <ul>- Notable features:</ul>
+                    <br> <br> <br>
+                    <div id=pic_ngc2997>asd</div>
+
+                </div>
+
+                <div class="inner" id="event5_Info" style="visibility: hidden">
+                    <p class="title2">M66</p>
+                    <hr>
+
+                    <p>Description: </p>
+                    <ul>- Age:</ul>
+                    <ul>- Distance:</ul>
+                    <ul>- Notable features:</ul>
+                    <br> <br> <br>
+                    <div id=pic_m66>asd</div>
+
+                </div>
+
+                <div class="inner" id="event6_Info" style="visibility: hidden">
+                    <p class="title2">M96</p>
+                    <hr>
+
+                    <p>Description: </p>
+                    <ul>- Age:</ul>
+                    <ul>- Distance:</ul>
+                    <ul>- Notable features:</ul>
+                    <br> <br> <br>
+                    <div id=pic_m96>asd</div>
+
+                </div>
+
+                <div class="inner" id="credits_Info" style="visibility: hidden">
+                    <p class="title2">Credits</p>
+                    <hr>
+
+                    <p>aaa: </p>
+                    <ul>- Age:</ul>
+                    <ul>- Distance:</ul>
+                    <ul>- Notable features:</ul>
+                    <br> <br> <br>
+
                 </div>
 
             </div>

@@ -71,20 +71,44 @@ html, body {
     width: 200px;
 }
 
-#pic_sombrero {
+#pic_sombrero, #pic_crabnebula, #pic_ngc1365, #pic_ngc2997, #pic_m66, #pic_m96 {
     position: absolute;
     display: inline-block;
     width: 300px;
     height: 400px;
     top: 155px;
     left: 415px;
-    content: url(SombreroGalaxy-M104_Edited.jpg);
     border: 5px solid rgba(20, 20, 20, 0.753);
+}
+
+#pic_sombrero {
+    content: url(SombreroGalaxy-M104_Edited.jpg);
+}
+
+#pic_crabnebula {
+    content: url(CrabNebula_Edited.jpg);
+}
+
+#pic_ngc1365 {
+    content: url(GreatBarredSpiralGalaxy-NGC1365_Edited.jpg);
+}
+
+#pic_ngc2997 {
+    content: url(NGC2997_Edited.jpg);
+}
+
+#pic_m66 {
+    content: url(M66_Edited.jpg);
+}
+
+#pic_m96 {
+    content: url(M96_Edited.jpg);
 }
 
 .text {
     padding: 13px 0px 0px 0px;
     color: white;
+    margin: 18px;
 }
 
 .inner {
