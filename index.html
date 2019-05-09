@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ASTR181 Final</title>
-     <link rel="stylesheet" href="css.css" type="text/css"> 
+    <link rel="stylesheet" href="css.css" type="text/css">
     <script src="script.js" charset="utf-8" type="text/javascript"></script>
 
 
@@ -20,35 +20,37 @@
         <!-- Event List -->
         <div id="leftCol">
             <div id="eventBox">
-                <div id="event" onclick="showHome()">
-                    <p>Home</p>
+                <div id="event" style="margin: 0px 0px 10px 0px;" onclick="showHome()">
+                    <p class=text>Home</p>
                 </div>
-                <div id="event" onclick="console.log('a');" style="visibility: hidden">
+                <!-- <div id="event" onclick="console.log('a');" style="visibility: hidden">
                     <p>Event 1</p>
+                </div> -->
+                <div
+                    style="width: 207px; height: 2px; margin: 20px 0px 20px 0px; background-color: rgba(99, 99, 99, 0.753);">
                 </div>
+
                 <div id="event" onclick="showEvent1()">
-                    <p>Sombrero Galaxy</p>
+                    <p class=text>Sombrero Galaxy</p>
                 </div>
-                <div id="event" style="visibility: hidden">
-                    <p></p>
-                </div>
+
                 <div id="event" onclick="showEvent2()">
-                    <p>Crab Nebula</p>
+                    <p class=text>Crab Nebula</p>
                 </div>
                 <div id="event" onclick="alert('Not yet implemented');">
-                    <p>Event 3</p>
+                    <p class=text>Event 3</p>
                 </div>
                 <div id="event" onclick="alert('Not yet implemented');">
-                    <p>Event 4</p>
+                    <p class=text>Event 4</p>
                 </div>
                 <div id="event" onclick="alert('Not yet implemented');">
-                    <p>Event 5</p>
+                    <p class=text>Event 5</p>
                 </div>
                 <div id="event" onclick="alert('Not yet implemented');">
-                    <p>Event 6</p>
+                    <p class=text>Event 6</p>
                 </div>
                 <div id="event" onclick="alert('Not yet implemented');">
-                    <p>Event 7</p>
+                    <p class=text>Event 7</p>
                 </div>
 
             </div>
@@ -62,7 +64,8 @@
             <div id="descBox">
 
                 <div class="inner" id="home_Info" style="visibility: visible;">
-                    <p class="title">Welcome to a small directory of space objects</p>
+                    <p class="title">Welcome to a directory of space objects</p>
+                    <hr>
                     <p>Click on the named buttons of the left hand side to open a new object.</p>
                     <br> <br> <br>
                     <p>Please note that this is a very rough draft to showcase our idea we (Justin Byers & Quinn
@@ -77,13 +80,15 @@
                 </div>
 
                 <div class="inner" id="event1_Info" style="visibility: hidden">
-                    <p class="title">The Sombrero Galaxy</p>
+                    <p class="title2">The Sombrero Galaxy</p>
+                    <hr>
+
                     <p>Description: </p>
                     <ul>- Age:</ul>
                     <ul>- Distance:</ul>
                     <ul>- Notable features:</ul>
                     <br> <br> <br>
-                    <p>*Picture here*</p>
+                    <div id=pic_sombrero>asd</div>
 
                 </div>
 
