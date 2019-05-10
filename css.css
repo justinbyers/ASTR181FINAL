@@ -67,8 +67,12 @@ html, body {
     background: #525252a8;
 }
 
-#textContainer {
-    width: 200px;
+#textbox {
+    width: 370px;
+    height: 427px;
+
+
+    padding: 20px 0px 0px 10px;
 }
 
 #pic_sombrero, #pic_crabnebula, #pic_ngc1365, #pic_ngc2997, #pic_m66, #pic_m96 {
