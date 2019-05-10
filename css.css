@@ -51,7 +51,7 @@ html, body {
     font-size: 18px;
 }
 
-#event {
+#menu, #event1, #event2, #event3, #event4, #event5, #event6, #credits {
     background: #000000a8;
     height: 50px;
     width: 206px;
@@ -63,7 +63,7 @@ html, body {
     font-size: 20px;
 }
 
-#event:hover {
+#menu:hover, #event1:hover, #event2:hover, #event3:hover, #event4:hover, #event5:hover, #event6:hover, #credits:hover {
     background: #525252a8;
 }
 
@@ -71,8 +71,30 @@ html, body {
     width: 370px;
     height: 427px;
 
-
     padding: 20px 0px 0px 10px;
+}
+
+#menupic1, #menupic2, #menupic3{
+    position: absolute;
+    display: inline-block;
+    width: 175px;
+    height: 150px;
+    top: 300px;
+    border: 5px solid rgba(20, 20, 20, 0.753);
+}
+
+#menupic1{
+    left: 50px;
+    content: url(SombreroGalaxy-M104_Edited.jpg);
+    
+}
+#menupic2{
+    left: 280px;
+    content: url(CrabNebula_Edited.jpg);
+}
+#menupic3{
+    left: 510px;
+    content: url(NGC2997_Edited.jpg);
 }
 
 #pic_sombrero, #pic_crabnebula, #pic_ngc1365, #pic_ngc2997, #pic_m66, #pic_m96 {

@@ -1,5 +1,4 @@
 function hideCurrentInfo() {
-    // document.getElementById("descBox").innerText = "";
     document.getElementById("home_Info").setAttribute("style", "visibility:hidden;");
     document.getElementById("event1_Info").setAttribute("style", "visibility:hidden;");
     document.getElementById("event2_Info").setAttribute("style", "visibility:hidden;");
@@ -8,7 +7,6 @@ function hideCurrentInfo() {
     document.getElementById("event5_Info").setAttribute("style", "visibility:hidden;");
     document.getElementById("event6_Info").setAttribute("style", "visibility:hidden;");
     document.getElementById("credits_Info").setAttribute("style", "visibility:hidden;");
-    
 }
 function showHome() {
     hideCurrentInfo();

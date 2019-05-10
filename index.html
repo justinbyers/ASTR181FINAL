@@ -20,7 +20,7 @@
         <!-- Event List -->
         <div id="leftCol">
             <div id="eventBox">
-                <div id="event" style="margin: 0px 0px 0px 0px;" onclick="showHome()">
+                <div id="menu" style="margin: 0px 0px 0px 0px;" onclick="showHome()">
                     <p class=text style="margin: 15px 0px 0px 0px;">Home</p>
                 </div>
                 <!-- <div id="event" onclick="console.log('a');" style="visibility: hidden">
@@ -30,24 +30,24 @@
                     style="width: 207px; height: 2px; margin: 15px 0px 18px 0px; background-color: rgba(99, 99, 99, 0.753);">
                 </div>
 
-                <div id="event" onclick="showEvent1()">
+                <div id="event1" onclick="showEvent1()">
                     <p class=text>Sombrero Galaxy</p>
                 </div>
 
-                <div id="event" onclick="showEvent2()">
+                <div id="event2" onclick="showEvent2()">
                     <p class=text>Crab Nebula</p>
                 </div>
 
-                <div id="event" onclick="showEvent3()">
+                <div id="event3" onclick="showEvent3()">
                     <p class=text>NGC 1365</p>
                 </div>
-                <div id="event" onclick="showEvent4()">
+                <div id="event4" onclick="showEvent4()">
                     <p class=text>NGC 2997</p>
                 </div>
-                <div id="event" onclick="showEvent5()">
+                <div id="event5" onclick="showEvent5()">
                     <p class=text>M66</p>
                 </div>
-                <div id="event" onclick="showEvent6()">
+                <div id="event6" onclick="showEvent6()">
                     <p class=text>M96</p>
                 </div>
 
@@ -55,7 +55,7 @@
                     style="width: 207px; height: 2px; margin: 20px 0px 15px 0px; background-color: rgba(99, 99, 99, 0.753);">
                 </div>
 
-                <div id="event" onclick="showCredits()">
+                <div id="credits" onclick="showCredits()">
                     <p class=text>Credits</p>
                 </div>
 
@@ -71,91 +71,124 @@
 
                 <div class="inner" id="home_Info" style="visibility: visible;">
                     <p class="title">Welcome to a directory of space objects</p>
-                    <hr>
-                    <p>Click on the named buttons of the left hand side to open a new object.</p>
-                    <br> <br> <br>
+
+                    <div
+                        style="width: 707px; height: 3px; margin: 15px 0px 18px 0px; background-color: rgba(99, 99, 99, 0.753);">
+                    </div>
+                    <br>
+                    <p style="text-align: center; font-size: 20px">Click on the buttons to the left to navigate to each
+                        object.</p>
+                    <p style="text-align: center; font-size: 20px">Each section contains basic information about that
+                        object.</p>
+                    <br>
+                    
+                    <div id=menupic1>Sombrero Galaxy</div>
+                    <div id=menupic2>Crab Nebula</div>
+                    <div id=menupic3>NGC 2997</div>
+
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <p style="text-align: center; font-size: 20px">This website was created by Justin Byers and Quinn
+                        Iadicola</p>
+
 
                 </div>
 
                 <div class="inner" id="event1_Info" style="visibility: hidden">
                     <p class="title2">The Sombrero Galaxy</p>
-                    <hr>
+                    <div
+                        style="width: 707px; height: 3px; margin: 15px 0px 18px 0px; background-color: rgba(99, 99, 99, 0.753);">
+                    </div>
 
                     <div id=textbox>
-                        <p>Description: </p>
-                        <p> </p>
+                        <p>Description: A type Sa-Sb spiral galaxy also known as Messier 104.</p>
+                        <p>The Sombrero Galaxy is named such due to the similarities of its bright core and dark dust
+                            ring and the shape of a sombrero hat.</p>
                         <br>
-                        <p>- Apparent Mag: </p>
-                        <p>- Size: </p>
-                        <p>- Distance Away: </p>
-                        <p>- Notable features include </p>
+                        <p>- Apparent Mag: 8.0</p>
+                        <p>- Size: ~50,000 light years across</p>
+                        <p>- Distance Away: ~28 million light years </p>
+                        <p>- Notable features include a bright core with a prominent dust lane ring surrounding the
+                            spiral arms. M104 is believed to host a massive black hole in the center, as suggested by
+                            X-ray emissions.</p>
                         <br> <br> <br>
                     </div>
 
-                    <div id=pic_sombrero>asd</div>
+                    <div id=pic_sombrero>Sombrero Galaxy Picture</div>
 
                 </div>
 
                 <div class="inner" id="event2_Info" style="visibility: hidden">
                     <p class="title2">The Crab Nebula</p>
-                    <hr>
+                    <div
+                    style="width: 707px; height: 3px; margin: 15px 0px 18px 0px; background-color: rgba(99, 99, 99, 0.753);">
+                </div>
 
                     <div id=textbox>
-                        <p>Description: </p>
-                        <p> </p>
+                        <p>Description: A widely known supernova remnant also known as Messier 1.</p>
+                        <p>The Crab Nebula is a relatively young object, aged at around 1,000 years old.</p>
                         <br>
-                        <p>- Apparent Mag: </p>
-                        <p>- Size:</p>
-                        <p>- Distance Away: </p>
-                        <p>- Notable features include </p>
+                        <p>- Apparent Mag: 8.4</p>
+                        <p>- Size: ~11 light years across</p>
+                        <p>- Distance Away: 63,000 light years</p>
+                        <br>
+                        <p>- Notable features include a young rapidly spinning neutron star at its core. Messier 1 was
+                            so popular among astronomers that it divided the community in two; one half whose work
+                            related to Messier 1, and one half whose work didn't.</p>
                         <br> <br> <br>
                     </div>
 
-                    <div id=pic_crabnebula>asd</div>
+                    <div id=pic_crabnebula>Crab Neb Picture</div>
 
                 </div>
 
                 <div class="inner" id="event3_Info" style="visibility: hidden">
                     <p class="title2">NGC 1365</p>
-                    <hr>
+                    <div
+                    style="width: 707px; height: 3px; margin: 15px 0px 18px 0px; background-color: rgba(99, 99, 99, 0.753);">
+                </div>
 
                     <div id=textbox>
-                        <p>Description: </p>
+                        <p>Description: NGC 1365 is a barred spiral galaxy in the constellation Fornax.</p>
                         <p></p>
                         <br>
-                        <p>- Apparent Mag: </p>
-                        <p>- Size: </p>
-                        <p>- Distance Away: </p>
-                        <p>- Notable features include </p>
+                        <p>- Apparent Mag: 9.5</p>
+                        <p>- Size: ~200,000 light years across</p>
+                        <p>- Distance Away: ~60 million light years</p>
+                        <br>
+                        <p>- Notable features include clear spiral arms with a barred center. NGC 1365 is known for being one of the largest known galaxies.</p>
                         <br> <br> <br>
                     </div>
 
-                    <div id=pic_ngc1365>asd</div>
+                    <div id=pic_ngc1365>NGC 1365 Picture</div>
 
                 </div>
 
                 <div class="inner" id="event4_Info" style="visibility: hidden">
                     <p class="title2">NGC 2997</p>
-                    <hr>
+                    <div
+                    style="width: 707px; height: 3px; margin: 15px 0px 18px 0px; background-color: rgba(99, 99, 99, 0.753);">
+                </div>
 
                     <div id=textbox>
-                        <p>Description:</p>
+                        <p>Description: NGC 2997 is a type Sc spiral galaxy in the constellation Antilla. </p>
                         <p></p>
                         <br>
-                        <p>- Apparent Mag: </p>
+                        <p>- Apparent Mag: 10.1</p>
                         <p>- Size: </p>
-                        <p>- Distance Away: </p>
+                        <p>- Distance Away: ~55 million light years</p>
                         <p>- Notable features include </p>
                         <br> <br> <br>
                     </div>
 
-                    <div id=pic_ngc2997>asd</div>
+                    <div id=pic_ngc2997>NGC 2997 Picture</div>
 
                 </div>
 
                 <div class="inner" id="event5_Info" style="visibility: hidden">
                     <p class="title2">M66</p>
-                    <hr>
+                    <div
+                    style="width: 707px; height: 3px; margin: 15px 0px 18px 0px; background-color: rgba(99, 99, 99, 0.753);">
+                </div>
 
                     <div id=textbox>
                         <p>Description: A deformed Sb spiral galaxy also known as NGC 3627. </p>
@@ -171,13 +204,15 @@
                     </div>
 
 
-                    <div id=pic_m66>asd</div>
+                    <div id=pic_m66>M66 Picture</div>
 
                 </div>
 
                 <div class="inner" id="event6_Info" style="visibility: hidden">
                     <p class="title2">M96</p>
-                    <hr>
+                    <div
+                    style="width: 707px; height: 3px; margin: 15px 0px 18px 0px; background-color: rgba(99, 99, 99, 0.753);">
+                </div>
 
                     <div id=textbox>
                         <p>Description: A type Sa spiral galaxy, also known as NGC 3368, located inside of the Leo
@@ -193,13 +228,15 @@
                         <br> <br> <br>
                     </div>
 
-                    <div id=pic_m96>asd</div>
+                    <div id=pic_m96>M96 Picture</div>
 
                 </div>
 
                 <div class="inner" id="credits_Info" style="visibility: hidden">
                     <p class="title2">Credits</p>
-                    <hr>
+                    <div
+                    style="width: 707px; height: 3px; margin: 15px 0px 18px 0px; background-color: rgba(99, 99, 99, 0.753);">
+                </div>
 
                     <p>aaa: </p>
 
