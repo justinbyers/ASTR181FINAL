@@ -70,11 +70,10 @@ html, body {
 #textbox {
     width: 370px;
     height: 427px;
-
     padding: 20px 0px 0px 10px;
 }
 
-#menupic1, #menupic2, #menupic3{
+#menupic1, #menupic2, #menupic3 {
     position: absolute;
     display: inline-block;
     width: 175px;
@@ -83,16 +82,17 @@ html, body {
     border: 5px solid rgba(20, 20, 20, 0.753);
 }
 
-#menupic1{
+#menupic1 {
     left: 50px;
     content: url(SombreroGalaxy-M104_Edited.jpg);
-    
 }
-#menupic2{
+
+#menupic2 {
     left: 280px;
     content: url(CrabNebula_Edited.jpg);
 }
-#menupic3{
+
+#menupic3 {
     left: 510px;
     content: url(NGC2997_Edited.jpg);
 }
